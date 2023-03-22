@@ -1,0 +1,209 @@
+/* Tablet */
+
+@media (min-width: 768px){
+    header{
+        justify-content: flex-start;
+        padding: 72px 40px;
+    }
+    .header-pattern{
+        height: 666px;
+        width: 666px;
+        transform: translate(0%, -100%);
+    }
+    .jumbotron{
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0 40px;
+        padding-bottom: 90px;
+    }
+    .jumbotron-image{
+        display: block;
+    }
+    .jumbo-image{
+        height: 314px;
+        width: 281px;
+    }
+    .jumbotron-content{
+        height: 400px;
+        align-items: start;
+        gap: 20px;
+    }
+    .jumbotron-content h1{
+        text-align: left;
+    }
+    .jumbotron-content p{
+        text-align: left;
+    }
+    .pricings{
+        display: grid;
+        height: 316px;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .pricing-title{
+        order: 1;
+        text-align: left !important;
+        padding-top: 20px !important;
+        padding-left: 60px !important;
+        justify-content: flex-end !important;
+        gap: 20px;
+        height: 200px !important;
+    }
+    .pricing-title h2{
+        margin: 0 !important;
+    }
+    .pricing-title h1{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .pricing-control{
+        order: 3;
+        justify-content: flex-start;
+        padding-left: 60px;
+        padding-bottom: 30px !important;
+    }
+    .pricing-description{
+        order: 2;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+    }
+    .pricing-description p{
+        text-align: left;
+    }
+    .dark-blue-bg{
+        top: 500px;
+        height: 1000px;
+    }
+    #blue_pattern{
+        top: 50%;
+        left: 0;
+        transform: translate(-35%, -50%);
+    }
+    #footer_pattern{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -15%);
+    }
+    .clock{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .time{
+        width: 100px;
+        height: 128px;
+        border-radius: 15px;
+    }
+    .number{
+        font-size: 56px;
+    }
+    .time .description{
+        font-size: 16px;
+    }
+}
+
+/* Desktop */
+
+
+@media (min-width: 1200px){
+    .landing{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    header{
+        padding: 0;
+    }
+    .jumbotron{
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        gap: 100px;
+    }
+    .jumbo-image{
+        height: 565px;
+        width: 480px;
+        object-fit: cover;
+        flex: 1;
+    }
+    .jumbotron-content{
+        flex: 1;
+        width: 300px !important;
+    }
+    .pricing-parent{
+        width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .pricings{
+        height: auto;
+        display: flex;
+        margin: 0 !important;
+    }
+    .pricing-title{
+        padding: 0 !important;
+        padding-top: 20px;
+        margin-top: 30px;
+        text-align: center !important;
+    }
+    .pricing-type h1{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .pricing-description{
+        padding: 50px 0 !important;
+        text-align: center !important;
+    }
+    .pricing-description p{
+        text-align: center;
+    }
+    .pricing-control{
+        padding: 0 !important;
+        text-align: center !important;
+        margin: 30px 0;
+    }
+    #blue_pattern{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+    .dark-blue-bg{
+        top: 260px;
+        height: 750px;
+    }
+    #footer_pattern{
+        top: 0;
+        left: 0;
+        transform: translate(-37%, -25%);
+    }
+    footer{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-timer{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer-timer h3{
+        padding-left: 0;
+    }
+    .clock{
+        justify-content: flex-start;
+    }
+    .footer-button{
+        padding: 0;
+    }
+}
